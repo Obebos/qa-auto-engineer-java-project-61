@@ -6,21 +6,44 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class App {
     public static void main(String[] args) {
-        String userName;
-        System.out.println("Please enter the game number and press Enter.");
-        System.out.println("1 - Greet");
-        System.out.println("2 - Even");
-        System.out.println("0 - Exit");
-        Scanner choose = new Scanner(System.in);
-        String ch1 = choose.nextLine();
-        switch (ch1){
-            case "1":
-                userName = Cli.getName();
-                Cli.greeting();
-                break;
+        String userName = null;
+        while(true) {
+            System.out.println("Please enter the game number and press Enter.");
+            System.out.println("1 - Greet");
+            System.out.println("2 - Even");
+            System.out.println("0 - Exit");
+            Scanner choose = new Scanner(System.in);
+            String ch1 = choose.nextLine();
+            switch (ch1) {
+                case "1":
+                    System.out.println("Welcome to the Brain Games!");
+                    System.out.println("May I have your name?");
+                    userName = Cli.getName();
+                    Cli.greeting();
+                    break;
+                case "2":
+                    if(userName == null){
+                        System.out.println("Welcome to the Brain Games!");
+                        System.out.println("May I have your name?");
+                        userName = Cli.getName();
+                        Cli.greeting();
+                    }
+                    boolean state = Even.gameEven();
+                    if(state == true){
+                        System.out.println("Congratulations, " + userName);
+                    } else if (state == false){
+                        System.out.println("Let's try again, " + userName);
+                    }
+
+                    break;
+                case "0":
+                    System.exit(0);
+                default:
+                    System.out.println("Invalid choice, please try again.");
+                    break;
+
+            }
 
         }
-
-
     }
 }

@@ -6,10 +6,21 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class App {
     public static void main(String[] args) {
-        System.out.println("Welcome to the Brain Games!");
-        System.out.println("May I have your name?");
+        String userName;
+        System.out.println("Please enter the game number and press Enter.");
+        System.out.println("1 - Greet");
+        System.out.println("2 - Even");
+        System.out.println("0 - Exit");
+        Scanner choose = new Scanner(System.in);
+        String ch1 = choose.nextLine();
+        switch (ch1){
+            case "1":
+                userName = Cli.getName();
+                Cli.greeting();
+                break;
 
-        String s = Cli.getUserName();
-        System.out.println(s);
+        }
+
+
     }
 }

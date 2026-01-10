@@ -1,5 +1,6 @@
 plugins {
     application
+    id("org.sonarqube") version "7.2.2.6593"
 }
 
 group = "hexlet.code"
@@ -13,6 +14,13 @@ repositories {
 
 tasks.getByName("run", JavaExec::class) {
     standardInput = System.`in`
+}
+
+sonar {
+    properties {
+        property("sonar.projectKey", "Obebos_qa-auto-engineer-java-project-61")
+        property("sonar.organization", "obebos")
+    }
 }
 
 dependencies {

@@ -7,6 +7,7 @@ public class Even {
     public static boolean gameEven(){
         int i = 0;
         Random random = new Random();
+        System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
         while(i<3){
             int num = random.nextInt(100) + 1;
             System.out.println("Question: " + num);

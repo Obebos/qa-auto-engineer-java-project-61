@@ -12,6 +12,7 @@ public class App {
             System.out.println("1 - Greet");
             System.out.println("2 - Even");
             System.out.println("3 - Calc");
+            System.out.println("4 - Gcd");
             System.out.println("0 - Exit");
             Scanner choose = new Scanner(System.in);
             String ch1 = choose.nextLine();
@@ -28,6 +29,8 @@ public class App {
                         System.out.println("May I have your name?");
                         userName = Cli.getName();
                         Cli.greeting();
+                    } else {
+                        System.out.println("Hello, " + userName + "!");
                     }
                     boolean state = Even.gameEven();
                     if(state == true){
@@ -42,6 +45,8 @@ public class App {
                         System.out.println("May I have your name?");
                         userName = Cli.getName();
                         Cli.greeting();
+                    } else {
+                        System.out.println("Hello, " + userName + "!");
                     }
                     boolean stateCalc = Calc.calcGame();
                     if(stateCalc == true){
@@ -49,7 +54,22 @@ public class App {
                     } else if (stateCalc == false){
                         System.out.println("Let's try again, " + userName);
                     }
-
+                    break;
+                case "4":
+                    if(userName == null){
+                        System.out.println("Welcome to the Brain Games!");
+                        System.out.println("May I have your name?");
+                        userName = Cli.getName();
+                        Cli.greeting();
+                    } else {
+                        System.out.println("Hello, " + userName + "!");
+                    }
+                    boolean stateGcd = Gcd.gcdGame();
+                    if(stateGcd == true){
+                        System.out.println("Congratulations, " + userName);
+                    } else if (stateGcd == false){
+                        System.out.println("Let's try again, " + userName);
+                    }
                     break;
                 case "0":
                     System.exit(0);

@@ -13,6 +13,7 @@ public class App {
             System.out.println("2 - Even");
             System.out.println("3 - Calc");
             System.out.println("4 - Gcd");
+            System.out.println("5 - Progression");
             System.out.println("0 - Exit");
             Scanner choose = new Scanner(System.in);
             String ch1 = choose.nextLine();
@@ -68,6 +69,22 @@ public class App {
                     if(stateGcd == true){
                         System.out.println("Congratulations, " + userName);
                     } else if (stateGcd == false){
+                        System.out.println("Let's try again, " + userName);
+                    }
+                    break;
+                case "5":
+                    if(userName == null){
+                        System.out.println("Welcome to the Brain Games!");
+                        System.out.println("May I have your name?");
+                        userName = Cli.getName();
+                        Cli.greeting();
+                    } else {
+                        System.out.println("Hello, " + userName + "!");
+                    }
+                    boolean stateProg = Progression.progGame();
+                    if(stateProg == true){
+                        System.out.println("Congratulations, " + userName);
+                    } else {
                         System.out.println("Let's try again, " + userName);
                     }
                     break;

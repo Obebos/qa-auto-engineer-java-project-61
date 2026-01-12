@@ -13,7 +13,7 @@ public class Calc {
             System.out.print("Your answer");
             Scanner ans = new Scanner(System.in);
             int answer = ans.nextInt();
-            if (answer == currentRes){
+            if (answer == currentRes) {
                 System.out.println("Correct!");
                 i++;
             } else {

@@ -49,4 +49,25 @@ make update
 
 ## FirstGame
 
-![]["C:\Users\Obebos\Pictures\firstgame.png"]
+![EvenGame](https://github.com/Obebos/qa-auto-engineer-java-project-61/blob/0bd387779290d6ad22f5d9e450d52bb29a35f86e/assets/EvenGame.png)
+
+## SecondGame
+
+![CalcGame](https://github.com/Obebos/qa-auto-engineer-java-project-61/blob/450ba83c2f38fd7657d9298a20192beff3748214/assets/CalcGame.png)
+
+## ThirdGame
+
+![Gcd](https://github.com/Obebos/qa-auto-engineer-java-project-61/blob/450ba83c2f38fd7657d9298a20192beff3748214/assets/GcdGame.png)
+
+## FourthGame
+
+![Progression](https://github.com/Obebos/qa-auto-engineer-java-project-61/blob/450ba83c2f38fd7657d9298a20192beff3748214/assets/Progression.png)
+
+## FifthGame
+
+![PrimeGame](https://github.com/Obebos/qa-auto-engineer-java-project-61/blob/450ba83c2f38fd7657d9298a20192beff3748214/assets/PrimeGame.png)
+
+
+
+
+

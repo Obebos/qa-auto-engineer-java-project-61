@@ -49,4 +49,4 @@ make update
 
 ## FirstGame
 
-![EvenGame](https://raw.githubusercontent.com/Obebos/qa-auto-engineer-java-project-61/blob/main/assets/EvenGame.png)
+![EvenGame]([[https://raw.githubusercontent.com/Obebos/qa-auto-engineer-java-project-61/blob/main/assets/EvenGame.png](https://github.com/Obebos/qa-auto-engineer-java-project-61/blob/main/assets/EvenGame.png)](https://github.com/Obebos/qa-auto-engineer-java-project-61/blob/main/assets/EvenGame.png?raw=true))

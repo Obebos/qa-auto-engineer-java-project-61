@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class Calc {
     public static boolean calcGame(){
         int i = 0;
-        Random random = new Random();
         System.out.println("What is the result of the expression?");
         while(i<3){
             int currentRes = Calc.calculate();

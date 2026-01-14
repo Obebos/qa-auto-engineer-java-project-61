@@ -14,6 +14,7 @@ public class App {
             System.out.println("3 - Calc");
             System.out.println("4 - Gcd");
             System.out.println("5 - Progression");
+            System.out.println("6 - Prime");
             System.out.println("0 - Exit");
             Scanner choose = new Scanner(System.in);
             String ch1 = choose.nextLine();
@@ -83,6 +84,22 @@ public class App {
                     }
                     boolean stateProg = Progression.progGame();
                     if(stateProg == true){
+                        System.out.println("Congratulations, " + userName);
+                    } else {
+                        System.out.println("Let's try again, " + userName);
+                    }
+                    break;
+                case "6":
+                    if(userName == null){
+                        System.out.println("Welcome to the Brain Games!");
+                        System.out.println("May I have your name?");
+                        userName = Cli.getName();
+                        Cli.greeting();
+                    } else {
+                        System.out.println("Hello, " + userName + "!");
+                    }
+                    boolean statePrime = Prime.primeGame();
+                    if(statePrime ==true){
                         System.out.println("Congratulations, " + userName);
                     } else {
                         System.out.println("Let's try again, " + userName);

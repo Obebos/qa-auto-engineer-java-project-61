@@ -49,4 +49,4 @@ make update
 
 ## FirstGame
 
-![]["C:\Users\Obebos\Pictures\firstgame.png"]
+![EvenGame](https://raw.githubusercontent.com/Obebos/qa-auto-engineer-java-project-61/blob/main/assets/EvenGame.png)

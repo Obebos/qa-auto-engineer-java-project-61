@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Progression {
     public static boolean progGame(){
-        System.out.println("What number is missing in the progression?");
+        System.out.println("What number is missing in the progressio?");
         int i = 0;
         while(i<3){
             String currentRes = Progression.prog();

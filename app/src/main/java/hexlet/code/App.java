@@ -84,7 +84,7 @@ public class App {
                     }
                     boolean stateProg = Progression.progGame();
                     if(stateProg == true){
-                        System.out.println("Congratulations, " + userName);
+                        System.out.println("Congratulation, " + userName);
                     } else {
                         System.out.println("Let's try again, " + userName);
                     }

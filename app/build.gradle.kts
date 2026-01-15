@@ -30,11 +30,6 @@ checkstyle {
 }
 
 
-tasks.register("checkstyle") {
-    dependsOn(tasks.named("checkstyleMain"))
-    dependsOn(tasks.named("checkstyleTest"))
-    group = "verification"
-    description = "Runs Checkstyle on all source sets"
-}
+
 
 

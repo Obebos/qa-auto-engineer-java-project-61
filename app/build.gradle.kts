@@ -29,11 +29,6 @@ checkstyle {
     configFile = file("config/checkstyle/checkstyle.xml")
 }
 
-dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.10.0"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-}
 
 tasks.register("checkstyle") {
     dependsOn(tasks.named("checkstyleMain"))
@@ -44,8 +39,4 @@ tasks.register("checkstyle") {
 
 tasks.named("check") {
     dependsOn("checkstyle")
-}
-
-tasks.test {
-    useJUnitPlatform()
 }

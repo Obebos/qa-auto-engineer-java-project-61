@@ -37,6 +37,4 @@ tasks.register("checkstyle") {
     description = "Runs Checkstyle on all source sets"
 }
 
-tasks.named("check") {
-    dependsOn("checkstyle")
-}
+

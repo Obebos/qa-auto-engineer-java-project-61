@@ -4,10 +4,10 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Calc {
-    public static boolean calcGame(){
+    public static boolean calcGame() {
         int i = 0;
         System.out.println("What is the result of the expression?");
-        while(i<3){
+        while (i < 3) {
             int currentRes = Calc.calculate();
             System.out.print("Your answer");
             Scanner ans = new Scanner(System.in);
@@ -30,24 +30,27 @@ public class Calc {
         return operators[randomIndex];
     }
 
-    public static int calculate(){
+    public static int calculate() {
         Random random = new Random();
         int firstNum = random.nextInt(50) + 1;
         int secondNum = random.nextInt(50) + 1;
         int res = 0;
         char operator = Calc.getRandomOperator();
-        switch (operator){
+        switch (operator) {
             case '+':
-                res = firstNum+secondNum;
+                res = firstNum + secondNum;
                 System.out.println("Question: " + firstNum + " + " + secondNum);
                 break;
             case '-':
-                res = firstNum-secondNum;
+                res = firstNum - secondNum;
                 System.out.println("Question: " + firstNum + " - " + secondNum);
                 break;
             case '*':
-                res = firstNum*secondNum;
+                res = firstNum * secondNum;
                 System.out.println("Question: " + firstNum + " * " + secondNum);
+                break;
+            default:
+                System.out.println("Sorry");
                 break;
         }
         return res;

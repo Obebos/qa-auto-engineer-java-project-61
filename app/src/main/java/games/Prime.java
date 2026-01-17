@@ -4,15 +4,6 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class Prime {
-//    public static boolean primeGame() {
-//        boolean currentAns = Prime.primenum();
-//        System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
-//        Scanner ans = new Scanner(System.in);
-//        String answer = ans.nextLine().toLowerCase();
-//        return (answer.equals("yes") && currentAns) || (answer.equals("no") && !currentAns);
-//
-//    }
-
     public static void startGame() {
         String gameDescription = "Find the greatest common divisor of given numbers.";
         String[][] gameData = primeGame();

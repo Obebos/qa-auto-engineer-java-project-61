@@ -4,24 +4,6 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class Calc {
-    //    public static boolean calcGame() {
-//       int i = 0;
-//        System.out.println("What is the result of the expression?");
-//        while (i < 3) {
-//            int currentRes = Calc.calculate();
-//            System.out.print("Your answer");
-//            Scanner ans = new Scanner(System.in);
-//            int answer = ans.nextInt();
-//            if (answer == currentRes) {
-//                System.out.println("Correct!");
-//                i++;
-//            } else {
-//                System.out.println(answer + " is wrong answer ;(. Correct answer was " + currentRes);
-//                return false;
-//            }
-//        }
-//        return true;
-//    }
     public static void startGame() {
         String gameDescription = "What is the result of the expression?";
         String[][] gameData = calculate();

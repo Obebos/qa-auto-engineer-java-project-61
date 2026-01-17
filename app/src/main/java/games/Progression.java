@@ -7,25 +7,6 @@ import java.util.Random;
 
 
 public class Progression {
-//    public static boolean progGame() {
-//        System.out.println("What number is missing in the progressio?");
-//        int i = 0;
-//        while (i < 3) {
-//            String currentRes = Progression.prog();
-//            System.out.print("Your answer");
-//            Scanner ans = new Scanner(System.in);
-//            String answer = ans.nextLine();
-//            if (currentRes.equals(answer)) {
-//                System.out.println("Correct!");
-//                i++;
-//            } else {
-//                System.out.println(answer + " is wrong answer ;(. Correct answer was " + currentRes);
-//                return false;
-//            }
-//        }
-//        return true;
-//    }
-
     public static void startGame() {
         String gameDescription = "What number is missing in the progression?";
         String[][] gameData = progGame();

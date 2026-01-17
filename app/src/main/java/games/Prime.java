@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Prime {
     public static void startGame() {
-        String gameDescription = "Find the greatest common divisor of given numbers.";
+        String gameDescription = "'yes' if given number is prime. Otherwise answer 'no'.";
         String[][] gameData = primeGame();
         Engine.runGame(gameData, gameDescription);
     }

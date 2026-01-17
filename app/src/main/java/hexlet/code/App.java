@@ -23,7 +23,7 @@ public class App {
         String ch1 = choose.nextLine();
         switch (ch1) {
             case "1":
-                Cli.greeting();
+                Cli.getName();
                 break;
             case "2":
                 Even.startGame();
